@@ -1,0 +1,3 @@
+# Legacy releases not available via HTTPS
+debian-watch-uses-insecure-uri ftp://ftp.unidata.ucar.edu/pub/netcdf/
+

@@ -1,0 +1,6 @@
+version=3
+opts=passive,\
+dversionmangle=s/\+(debian|dfsg|ds|deb)\d*$//,\
+uversionmangle=s/_/./g;s/(\d)[_\.\-\+]?((RC|rc|pre|dev|gamma|beta|alpha|b|a)[\-\.]?(\d*))$/$1~$3$4/;s/RC/rc/ \
+ftp://ftp.unidata.ucar.edu/pub/netcdf/ \
+netcdf-cxx-(.*)\.(?:tgz|tbz|txz|(?:tar\.(?:gz|bz2|xz)))

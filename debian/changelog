@@ -1,0 +1,173 @@
+netcdf-cxx-legacy (4.2-12) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.5.0, no changes.
+  * Add Build-Depends-Package field to symbols file.
+  * Remove package name from lintian overrides.
+  * Update gbp.conf to use --source-only-changes by default.
+  * Bump debhelper compat to 10, changes:
+    - Drop --parallel option, enabled by default
+    - Don't explicitly enable autoreconf, enabled by default
+    - Drop dh-autoreconf build dependency
+  * Update lintian overrides.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 01 Nov 2020 18:55:16 +0100
+
+netcdf-cxx-legacy (4.2-11) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.2.0, no changes.
+  * Add texinfo to build dependencies for makeinfo.
+    (closes: #906493)
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 17 Aug 2018 21:41:48 +0200
+
+netcdf-cxx-legacy (4.2-10) unstable; urgency=medium
+
+  * Drop autopkgtest to test installability.
+  * Add lintian override for testsuite-autopkgtest-missing.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 01 Aug 2018 08:12:11 +0200
+
+netcdf-cxx-legacy (4.2-9) unstable; urgency=medium
+
+  * Strip trailing whitespace from changelog, control & rules files.
+  * Update copyright-format URL to use HTTPS.
+  * Fix deprecated source override location.
+  * Update Vcs-* URLs for Salsa.
+  * Bump Standards-Version to 4.1.5, no changes.
+  * Drop obsolete dbg package.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 19 Jul 2018 15:41:20 +0200
+
+netcdf-cxx-legacy (4.2-8) unstable; urgency=medium
+
+  * Change priority from extra to optional.
+  * Bump Standards-Version to 4.1.1, changes: priority.
+  * Add libnetcdf-dev to dependencies of -dev package.
+  * Add lintian override for debian-watch-uses-insecure-uri.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 09 Nov 2017 07:41:36 +0100
+
+netcdf-cxx-legacy (4.2-7) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.0.0, no changes.
+  * Add autopkgtest to test installability.
+  * Enable PIE hardening buildflags.
+  * Use pkg-info.mk variables instead of dpkg-parsechangelog output.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 25 Jun 2017 20:00:09 +0200
+
+netcdf-cxx-legacy (4.2-6) unstable; urgency=medium
+
+  * Enable all hardening buildflags, except PIE (causes build failure).
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 27 Mar 2016 16:33:58 +0200
+
+netcdf-cxx-legacy (4.2-5) unstable; urgency=medium
+
+  * Fix 'interface' typo in debug package description.
+  * Update Vcs-Git URL to use HTTPS.
+  * Bump Standards-Version to 3.9.7, no changes.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 11 Mar 2016 02:49:31 +0100
+
+netcdf-cxx-legacy (4.2-4) unstable; urgency=medium
+
+  * Bump minimum required libnetcdf-dev to 4.4.0.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 21 Jan 2016 20:35:01 +0100
+
+netcdf-cxx-legacy (4.2-3) unstable; urgency=medium
+
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 01 Nov 2015 21:09:53 +0100
+
+netcdf-cxx-legacy (4.2-3~exp1) experimental; urgency=medium
+
+  * Disable parallel test execution.
+  * Bump minimum required libnetcdf-dev to 4.4.0~rc3.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 25 Oct 2015 14:49:44 +0100
+
+netcdf-cxx-legacy (4.2-2) unstable; urgency=medium
+
+  * Add Breaks/Replaces on netcdf-doc to libnetcdf-cxx-legacy-dev.
+    (closes: #798357)
+  * Update Vcs-Browser URL to use HTTPS.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Tue, 08 Sep 2015 21:50:02 +0200
+
+netcdf-cxx-legacy (4.2-1) unstable; urgency=medium
+
+  * Bump minimum required libnetcdf-dev to 4.4.0~rc2.
+  * Move from experimental to unstable.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Wed, 19 Aug 2015 19:40:11 +0200
+
+netcdf-cxx-legacy (4.2-1~exp6) experimental; urgency=medium
+
+  * Update symbols for other architectures.
+  * Include static library in -dev package.
+  * Explicitly remove .la file, not installed.
+  * Install netcdf-cxx.info in -dev package.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 14 Aug 2015 19:27:30 +0200
+
+netcdf-cxx-legacy (4.2-1~exp5) experimental; urgency=medium
+
+  * Update symbols for amd64 with GCC 5.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sat, 01 Aug 2015 02:44:39 +0200
+
+netcdf-cxx-legacy (4.2-1~exp4) experimental; urgency=medium
+
+  * Bump minimum required libnetcdf-dev to 4.4.0~rc2-1~exp4 for serial HDF5.
+  * Replace uppercase RC with lowercase rc in uversionmangle.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Fri, 31 Jul 2015 13:49:35 +0200
+
+netcdf-cxx-legacy (4.2-1~exp3) experimental; urgency=medium
+
+  * Require at least libnetcdf-dev 4.3.3.1.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Mon, 27 Jul 2015 18:52:49 +0200
+
+netcdf-cxx-legacy (4.2-1~exp2) experimental; urgency=medium
+
+  * Add Breaks/Replaces on libnetcdf-dev to libnetcdf-cxx-legacy-dev.
+    (closes: #789936)
+  * Enable verbose test output.
+  * Override dh_auto_test to ignore test failures.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Thu, 25 Jun 2015 19:52:20 +0200
+
+netcdf-cxx-legacy (4.2-1~exp1) experimental; urgency=medium
+
+  [ Nico Schlömer ]
+  * Initial release. (Closes: #789622)
+
+  [ Bas Couwenberg ]
+  * Add myself to Uploaders.
+  * Align dependencies in control file.
+  * Rename source package to netcdf-cxx-legacy.
+  * Switch Maintainer to Debian GIS Project.
+  * Change priority to optional.
+  * Reorder control fields.
+  * Bump Standards-Version to 3.9.6.
+  * Drop Suggests on non-existing package.
+  * Change description to match netcdf-cxx.
+  * Update copyright file.
+  * Don't install duplicate license.
+  * Override dh_install to use --list-missing.
+  * Update watchfile.
+  * Also install examples.
+  * Add gbp.conf to use pristine-tar by default.
+  * Rename library package to match SONAME.
+  * Enable parallel builds.
+  * Add symbols file using pkg-kde-symbolshelper.
+
+  [ Ross Gammon ]
+  * Add Breaks/Replace on old C++ library
+  * Mention netcdf-3 version in d/control long description
+
+ -- Ross Gammon <rossgammon@mail.dk>  Mon, 22 Jun 2015 21:34:35 +0200
